@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>LOGIN AND REGISTRATION FORM</title>
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body{
+margin:0;
+padding:0;
+font-family:sans-serif;
+
+}
+.entire-body{
+height:100%;
+width:100%;
+background-image:url("back2.jpg");
+background-position:center;
+background-size:cover;
+position:absolute;
+
+}
+.form-box{
+height:400px;
+width:380px;
+position:relative;
+background-color:white;
+margin:10% auto;
+border-radius:35px;
+overflow:hidden;
+box-shadow:0 0 20px 9px #ff61241f;
+}
+.button-box{
+width:236px;
+position:relative;
+margin:35px auto;
+box-shadow:0 0 20px 9px #ff61241f;
+border-radius:30px;
+}
+.toggle-btn{
+padding:10px 30px;
+cursor:pointer;
+background:transparent;
+border:0;
+position:relative;
+outline:none;
+
+}
+#btn{
+top:0;
+left:0;
+height:100%;
+width:110px;
+position:absolute;
+background:orange;
+border-radius:30px;
+transistion:.5s;
+}
+.input-group{
+top:100px;
+
+width:280px;
+position:absolute;
+transistion:.5s;
+}
+.input-field{
+
+padding:10px 0;
+width:100%;
+margin:5px 0;
+border-left:0;
+border-top:0;
+border-right:0;
+border-bottom:1px solid #999;
+outline:none;
+background:transparent;
+}
+.submit-btn{
+padding:10px 30px;
+width:85%;
+cursor:pointer;
+display:block;
+margin:auto;
+background:orange;
+border:0;
+outline:none;
+border-radius:30px;
+box-shadow:0 0 20px 9px #ff61241f;
+
+}
+.check-box{
+margin :30px 10px 30px 0px;
+
+}
+span{
+color:#777;
+font-size:12px;
+bottom:68%;
+
+}
+
+#login{
+left:50px;
+}
+#register{
+left:450px;
+}
+
+</style>
+
+
+<body>
+  <div class="entire-body">
+    <div class="form-box">
+       <div class="button-box"> 
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn"  onclick="login()">LOGIN</button> 
+        <button type="button" class="toggle-btn" onclick="register()"> REGISTER</button> 
+         
+         </div>
+         <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="user id" required>
+          <input type="password" class="input-field" placeholder=" enter password" required>
+          <input type="checkbox" class="check-box"> <span>REMEMBER PASSWORD</span>
+          <button type="submit" class="submit-btn" >LOGIN</button>
+          </form>
+          <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="user id" required>
+           <input type="email" class="input-field" placeholder="enter email id " required>
+          <input type="password" class="input-field" placeholder=" enter password" required>
+          <input type="checkbox" class="check-box"> <span>I AGREE TO TERMS AND CONDITIONS</span>
+          <button type="submit" class="submit-btn" >REGISTER</button>
+          </form>
+
+     </div>
+</div>
+<script>
+var x= document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+function register(){
+x.style.left="-400px";
+y.style.left="50px";
+z.style.left="110px";
+}
+function login(){
+x.style.left="50px";
+y.style.left="450px";
+z.style.left="0px";
+}
+</script>
+</body>
+</html>
